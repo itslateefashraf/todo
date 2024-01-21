@@ -1,6 +1,11 @@
 import React from 'react'
 
-const CustomInput = (props:any) => {
+interface propstype{
+    label:string;
+    type:string;
+    placeholder:string;
+}
+const CustomInput = (props:propstype) => {
     const {label,placeholder,type} = props
   return (
       <div className="mb-3">
